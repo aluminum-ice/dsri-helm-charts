@@ -102,7 +102,7 @@ spec:
         {{- if .Values.storage.enabled }}
         - name: data
           persistentVolumeClaim:
-            claimName: {{ .Values.storage.claimName }}
+            claimName: {{ include "rstudio.fullname" . }}
         {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
