@@ -21,7 +21,6 @@ jobs:
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.6.0
-        with:
-          flags: --skip-existing
+        with: skip-existing
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
