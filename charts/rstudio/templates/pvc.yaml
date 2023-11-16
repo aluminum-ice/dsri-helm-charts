@@ -11,4 +11,5 @@ spec:
   resources:
     requests:
       storage: {{ .Values.storage.size }}
+  storageClassName: {{ .Values.storage.storageClassName }}
 {{- end }}
