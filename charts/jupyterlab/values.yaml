@@ -7,7 +7,7 @@ password: ""
 
 # Git URL to be cloned in the workspace
 gitUrl: ""
-# gitUrl: "https://github.com/MaastrichtU-IDS/dsri-demo"
+# gitUrl: "https://github.com/aluminum-ice/dsri-demo"
 
 # Git config to be set in the container
 gitName: "Default user"

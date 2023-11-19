@@ -2,7 +2,7 @@ apiVersion: v2
 name: code-server
 description: A Helm chart to deploy VisualStudio Code server on Kubernetes and OpenShift
 type: application
-home: https://github.com/MaastrichtU-IDS/dsri-helm-charts
+home: https://github.com/aluminum-ice/dsri-helm-charts
 icon: https://code.visualstudio.com/assets/images/code-stable.png
 
 ## DEPRECATED: we now use the JupyterLab chart to deploy a JupyterLab + VSCode workspace
@@ -24,7 +24,7 @@ maintainers:
   - email: vincent.emonet@gmail.com
     name: Vincent Emonet
 sources:
-  - https://github.com/MaastrichtU-IDS/dsri-helm-charts
+  - https://github.com/aluminum-ice/dsri-helm-charts
 
 annotations:
   artifacthub.io/operator: "false"

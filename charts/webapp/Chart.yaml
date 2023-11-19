@@ -24,7 +24,7 @@ maintainers:
   - email: vincent.emonet@gmail.com
     name: Vincent Emonet
 sources:
-  - https://github.com/MaastrichtU-IDS/dsri-helm-charts
+  - https://github.com/aluminum-ice/dsri-helm-charts
 
 annotations:
   artifacthub.io/operator: "false"
