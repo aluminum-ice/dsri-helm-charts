@@ -2,7 +2,7 @@
 
 [![Release Charts](https://github.com/aluminum-ice/dsri-helm-charts/actions/workflows/release.yml/badge.svg)](https://github.com/aluminum-ice/dsri-helm-charts/actions/workflows/release.yml) 
 
-Helm charts to easily deploy Data Science workspaces and services on Kubernetes and OpenShift. Developed for the [Data Science Research Infrastructure](https://maastrichtu-ids.github.io/dsri-documentation/) at Maastricht University
+Helm charts to easily deploy Data Science workspaces and services on Kubernetes and OpenShift. Developed for the [Data Science Research Infrastructure](https://aluminum-ice.github.io/dsri-documentation/) at Maastricht University
 
 Checkout the `charts` folder to browse the charts available: 
 
@@ -12,12 +12,12 @@ Checkout the `charts` folder to browse the charts available:
 
 ## Install
 
-To deploy charts from the terminal you will need to have `helm` installed on your machine, you can [follow this documentation](https://maastrichtu-ids.github.io/dsri-documentation/docs/helm#install-helm) to install it.
+To deploy charts from the terminal you will need to have `helm` installed on your machine, you can [follow this documentation](https://aluminum-ice.github.io/dsri-documentation/docs/helm#install-helm) to install it.
 
 Add the DSRI Helm Charts repository:
 
 ```bash
-helm repo add dsri https://maastrichtu-ids.github.io/dsri-helm-charts/
+helm repo add dsri https://aluminum-ice.github.io/dsri-helm-charts/
 helm repo update
 ```
 
@@ -115,7 +115,7 @@ metadata:
 spec:
   name: dsri-helm-charts
   connectionConfig:
-    url: https://maastrichtu-ids.github.io/dsri-helm-charts/
+    url: https://aluminum-ice.github.io/dsri-helm-charts/
 EOF
 ```
 

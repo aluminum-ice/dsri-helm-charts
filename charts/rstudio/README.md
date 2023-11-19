@@ -23,7 +23,7 @@ You can also extend those images to build a custom one with all the packages you
 Install the DSRI Helm Charts on your machine, if not already done:
 
 ```bash
-helm repo add dsri https://maastrichtu-ids.github.io/dsri-helm-charts/
+helm repo add dsri https://aluminum-ice.github.io/dsri-helm-charts/
 helm repo update
 ```
 
