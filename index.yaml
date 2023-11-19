@@ -85,6 +85,32 @@ entries:
       artifacthub.io/operator: "false"
     apiVersion: v2
     appVersion: 3.2.0
+    created: "2023-11-19T21:58:40.560510519Z"
+    description: 'A Helm chart to deploy RStudio on Kubernetes and OpenShift. Most
+      images based on rocker can be used, such as: bioconductor/bioconductor_docker:devel
+      | rocker/rstudio | rocker/tidyverse | ghcr.io/maastrichtu-ids/rstudio '
+    digest: 9140f26f668276a8baf6302d0c9ff9962fcc86d52b12b513c038c5efbce88c78
+    home: https://artifacthub.io/packages/helm/dsri-helm-charts/rstudio
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RStudio_logo_flat.svg/512px-RStudio_logo_flat.svg.png
+    keywords:
+    - r
+    - rstudio
+    - workspace
+    - openshift
+    maintainers:
+    - email: vincent.emonet@gmail.com
+      name: Vincent Emonet
+    name: rstudio
+    sources:
+    - https://github.com/aluminum-ice/dsri-helm-charts
+    type: application
+    urls:
+    - https://github.com/aluminum-ice/dsri-helm-charts/releases/download/rstudio-0.1.30/rstudio-0.1.30.tgz
+    version: 0.1.30
+  - annotations:
+      artifacthub.io/operator: "false"
+    apiVersion: v2
+    appVersion: 3.2.0
     created: "2023-11-19T21:43:33.455823794Z"
     description: 'A Helm chart to deploy RStudio on Kubernetes and OpenShift. Most
       images based on rocker can be used, such as: bioconductor/bioconductor_docker:devel
@@ -160,4 +186,4 @@ entries:
     urls:
     - https://github.com/aluminum-ice/dsri-helm-charts/releases/download/webapp-0.1.18/webapp-0.1.18.tgz
     version: 0.1.18
-generated: "2023-11-19T21:43:33.614686873Z"
+generated: "2023-11-19T21:58:40.560541978Z"
