@@ -11,7 +11,7 @@ A generic reuseable Helm chart for deploying almost any dockerized application e
 Install the DSRI Helm Charts on your machine, if not already done:
 
 ```bash
-helm repo add dsri https://maastrichtu-ids.github.io/dsri-helm-charts/
+helm repo add dsri https://aluminum-ice.github.io/dsri-helm-charts/
 helm repo update
 ```
 

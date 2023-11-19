@@ -12,7 +12,7 @@ A Helm chart to deploy VisualStudio Code server on Kubernetes and OpenShift
 To install the DSRI Helm Charts, if not already done:
 
 ```bash
-helm repo add dsri https://maastrichtu-ids.github.io/dsri-helm-charts/
+helm repo add dsri https://aluminum-ice.github.io/dsri-helm-charts/
 helm repo update
 ```
 
