@@ -6,10 +6,10 @@
 
 {{ template "chart.description" . }}
 
-> The aim of this Helm chart is to give an easy and straightforward way to deploy JupyterLab on OpenShift and Kubernetes clusters. Currently the chart is mostly optimized and used in OpenShift/OKD clusters, if you are using it with other Kubernetes distributions please let us know  in the [GitHub repository issues](https://github.com/MaastrichtU-IDS/dsri-helm-charts/issues), we would love to hear about it!
+> The aim of this Helm chart is to give an easy and straightforward way to deploy JupyterLab on OpenShift and Kubernetes clusters. Currently the chart is mostly optimized and used in OpenShift/OKD clusters, if you are using it with other Kubernetes distributions please let us know  in the [GitHub repository issues](https://github.com/aluminum-ice/dsri-helm-charts/issues), we would love to hear about it!
 
 With this Helm chart you can deploy any JupyterLab Docker image with root privileges (or not), including those based on the [official Jupyter docker stack](https://github.com/jupyter/docker-stacks), such as:
-- [`ghcr.io/maastrichtu-ids/jupyterlab`](https://github.com/MaastrichtU-IDS/jupyterlab) (our custom image for Data Science with VisualStudio Code, OpenRefine, conda integration, Python autocomplete, and additional Java and SPARQL kernels)
+- [`ghcr.io/maastrichtu-ids/jupyterlab`](https://github.com/aluminum-ice/jupyterlab) (our custom image for Data Science with VisualStudio Code, OpenRefine, conda integration, Python autocomplete, and additional Java and SPARQL kernels)
 - [`jupyter/minimal-notebook`](https://github.com/jupyter/docker-stacks/tree/master/base-notebook)
 - `jupyter/scipy-notebook`
 - `jupyter/datascience-notebook` (with Julia kernel)
@@ -21,9 +21,9 @@ With this Helm chart you can deploy any JupyterLab Docker image with root privil
 - [`nvcr.io/nvidia/pytorch`](https://ngc.nvidia.com/catalog/containers/nvidia:pytorch)
 - [`nvcr.io/nvidia/cuda`](https://ngc.nvidia.com/catalog/containers/nvidia:cuda)
 
-You can also extend those images to build a custom one with all the packages you need already installed, we recommend you to take a look at the instructions of our custom JupyterLab image at https://github.com/MaastrichtU-IDS/jupyterlab
+You can also extend those images to build a custom one with all the packages you need already installed, we recommend you to take a look at the instructions of our custom JupyterLab image at https://github.com/aluminum-ice/jupyterlab
 
-> Visit the [dsri-helm-charts GitHub repository](https://github.com/MaastrichtU-IDS/dsri-helm-charts) for more details on how to develop and tests the charts, feel free to send us pull requests to propose your improvements!
+> Visit the [dsri-helm-charts GitHub repository](https://github.com/aluminum-ice/dsri-helm-charts) for more details on how to develop and tests the charts, feel free to send us pull requests to propose your improvements!
 
 ## Installing the Chart
 
@@ -53,7 +53,7 @@ helm install {{ template "chart.name" . }} dsri/{{ template "chart.name" . }} \
 You can also automatically clone a Git repository in the workspace by adding this to the previous command:
 
 ```bash
-  --set gitUrl=https://github.com/MaastrichtU-IDS/dsri-demo
+  --set gitUrl=https://github.com/aluminum-ice/dsri-demo
 ```
 
 If you are not using a `ghcr.io/maastrichtu-ids/jupyterlab` image, you will need to also enable the `jupyter_notebook_config.py`:
@@ -81,7 +81,7 @@ helm install {{ template "chart.name" . }} dsri/{{ template "chart.name" . }} \
 
 ### On GPU
 
-You can also use this chart to deploy JupyterLab **on GPU**, here is an example with the release name `{{ template "chart.name" . }}-gpu`, using the existing `anyuid` service account, and our custom [`ghcr.io/maastrichtu-ids/jupyterlab:tensorflow`](https://github.com/MaastrichtU-IDS/jupyterlab#jupyterlab-on-gpu-%EF%B8%8F) image based on [`nvcr.io/nvidia/tensorflow`](https://ngc.nvidia.com/catalog/containers/nvidia:tensorflow):
+You can also use this chart to deploy JupyterLab **on GPU**, here is an example with the release name `{{ template "chart.name" . }}-gpu`, using the existing `anyuid` service account, and our custom [`ghcr.io/maastrichtu-ids/jupyterlab:tensorflow`](https://github.com/aluminum-ice/jupyterlab#jupyterlab-on-gpu-%EF%B8%8F) image based on [`nvcr.io/nvidia/tensorflow`](https://ngc.nvidia.com/catalog/containers/nvidia:tensorflow):
 
 ```bash
 helm install {{ template "chart.name" . }}-gpu dsri/{{ template "chart.name" . }} \

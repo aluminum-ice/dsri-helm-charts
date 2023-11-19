@@ -6,7 +6,7 @@ password: ""
 
 # Git URL to be cloned in the workspace
 gitUrl: ""
-# gitUrl: https://github.com/MaastrichtU-IDS/play-fair
+# gitUrl: https://github.com/aluminum-ice/play-fair
 
 image:
   repository: ghcr.io/maastrichtu-ids/code-server
