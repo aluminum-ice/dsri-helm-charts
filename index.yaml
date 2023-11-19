@@ -54,6 +54,32 @@ entries:
     urls:
     - https://github.com/aluminum-ice/dsri-helm-charts/releases/download/jupyterlab-0.1.38/jupyterlab-0.1.38.tgz
     version: 0.1.38
+  libre-chat:
+  - annotations:
+      artifacthub.io/operator: "false"
+    apiVersion: v2
+    appVersion: 0.0.6
+    created: "2023-11-19T21:38:04.716043867Z"
+    description: A Helm chart to deploy JupyterLab on CPU and GPU in OpenShift and
+      Kubernetes clusters. Works well with images based on the jupyter/docker-stacks,
+      and images using the root user
+    digest: 119e3d8a20660a257132aea8460c4f360879bf3baa9e47b55d9c568759a15fac
+    home: https://artifacthub.io/packages/helm/dsri-helm-charts/libre-chat
+    icon: https://raw.github.com/vemonet/libre-chat/main/docs/docs/assets/logo.png
+    keywords:
+    - Chatbot
+    - LLM
+    - self-hosted
+    - Llama 2
+    - LangChain
+    maintainers:
+    - email: vincent.emonet@gmail.com
+      name: Vincent Emonet
+    name: libre-chat
+    type: application
+    urls:
+    - https://github.com/aluminum-ice/dsri-helm-charts/releases/download/libre-chat-0.1.0/libre-chat-0.1.0.tgz
+    version: 0.1.0
   rstudio:
   - annotations:
       artifacthub.io/operator: "false"
@@ -108,4 +134,4 @@ entries:
     urls:
     - https://github.com/aluminum-ice/dsri-helm-charts/releases/download/webapp-0.1.18/webapp-0.1.18.tgz
     version: 0.1.18
-generated: "2023-11-19T20:54:25.579191874Z"
+generated: "2023-11-19T21:38:05.101476292Z"
