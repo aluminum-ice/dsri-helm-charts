@@ -76,7 +76,7 @@ entries:
       name: Vincent Emonet
     name: rstudio
     sources:
-    - https://github.com/MaastrichtU-IDS/dsri-helm-charts
+    - https://github.com/aluminum-ice/dsri-helm-charts
     type: application
     urls:
     - https://github.com/aluminum-ice/dsri-helm-charts/releases/download/rstudio-0.1.28/rstudio-0.1.28.tgz
