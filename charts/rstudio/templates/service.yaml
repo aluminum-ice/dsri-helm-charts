@@ -11,5 +11,13 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
+  {{- if eq .Values.service.type "LoadBalancer" }}
+  loadBalancerIP: {{ .Values.service.loadBalancerIP }}
+  loadBalancerSourceRanges:
+    {{- range .Values.service.loadBalancerSourceRanges }}
+    - {{ . }}
+    {{- end }}
+  {{- end }}
+
   selector:
     {{- include "rstudio.selectorLabels" . | nindent 4 }}
